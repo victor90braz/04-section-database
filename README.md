@@ -27,3 +27,31 @@ mysql -u root -p
 # migrate
 
 php artisan migrate
+
+# steps to create a new user and add to database by using the terminal ''thinker''
+
+$ php artisan thinker
+
+Command "thinker" is not defined.
+
+Do you want to run "tinker" instead? (yes/no) [no]:
+
+> yes
+
+Psy Shell v0.11.22 (PHP 8.2.10 — cli) by Justin Hileman
+
+> $user = new User();
+> [!] Aliasing 'User' to 'App\Models\User' for this Tinker session.
+> = App\Models\User {#6280}
+
+> $user->name = 'mario';
+> = "mario"
+
+> $user->email = 'mario@gmail.com';
+> = "mario@gmail.com"
+
+> $user->password = bcrypt('!mario');
+= "$2y$10$eEy.LteLu8oG6Qko.vhv/ulBuWW409DVPcGBseodYU2Iu7MKTl2fO"
+
+> $user->save();
+> = true
