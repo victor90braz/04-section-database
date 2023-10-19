@@ -75,3 +75,12 @@ To retrieve a user from the database, you can use the following command:
 $user->find(1);
 // Find the user with ID 1
 ```
+
+> $user->pluck('name');
+> = Illuminate\Support\Collection {#7237
+
+    all: [
+      "mario",
+    ],
+
+}
