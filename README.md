@@ -1,6 +1,10 @@
 ## GitHub Repository
 
+<<<<<<< HEAD
 Find the code and more on GitHub: [04-section-database Repository](https://github.com/victor90braz/04-section-database.git)
+=======
+Find the code and more on GitHub: [04-section Repository](https://github.com/victor90braz/04-section-database.git)
+>>>>>>> 35b654b57db298469a8b0bd168872094b2d8cb3c
 
 ## https://github.com/victor90braz/04-section-database.git
 
