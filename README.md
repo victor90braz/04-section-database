@@ -75,10 +75,3 @@ To retrieve a user from the database, you can use the following command:
 $user->find(1);
 // Find the user with ID 1
 ```
-
-That's it! This README provides instructions for setting up your Laravel project, running it, connecting to the database, and using Tinker to create and retrieve users.
-
-```
-
-These updates improve the readability and correctness of your README file.
-```
