@@ -1,8 +1,8 @@
 ## GitHub Repository
 
-Find the code and more on GitHub: [03-section Repository](https://github.com/victor90braz/02-section.git)
+Find the code and more on GitHub: [04-section-database Repository](https://github.com/victor90braz/04-section-database.git)
 
-## https://github.com/victor90braz/02-section.git
+## https://github.com/victor90braz/04-section-database.git
 
 # Installation
 
