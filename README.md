@@ -58,22 +58,6 @@ To create the necessary database tables, run the migration with:
 php artisan migrate
 ```
 
-# Steps for Creating Models
-
-To create a new migration and model for your "Post" entity, use the following commands:
-
-1. Create a migration for the "posts" table:
-
-```bash
-php artisan make:migration create_posts_table
-```
-
-2. Create a model for the "Post" entity:
-
-```bash
-php artisan make:model Post
-```
-
 # Creating a New User and Adding It to the Database Using Tinker
 
 To create a new user and add it to the database, you can use Laravel's Tinker. First, run Tinker with the following command:
@@ -110,7 +94,25 @@ $user->save();
 $user->find(1);
 ```
 
+# Posts
+
 This sequence of commands creates a new user with the provided information and stores it in your database.
+
+# Steps for Creating Models
+
+To create a new migration and model for your "Post" entity, use the following commands:
+
+1. Create a migration for the "posts" table:
+
+```bash
+php artisan make:migration create_posts_table
+```
+
+2. Create a model for the "Post" entity:
+
+```bash
+php artisan make:model Post
+```
 
 # Creating a New Post and Adding It to the Database Using Tinker
 
