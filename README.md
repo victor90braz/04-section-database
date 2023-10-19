@@ -84,3 +84,9 @@ $user->find(1);
     ],
 
 }
+
+# steps
+
+php artisan make:migration
+php artisan migration
+php artisan make:model Post
