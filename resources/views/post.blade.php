@@ -2,9 +2,9 @@
     <div class="container" style="max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f5f5f5;">
         <nav>
             <ul style="list-style: none;">
-                <li style="font-weight: bold; color: #007bff; text-decoration: underline;">
-                    <a href="/categories/{{ $post->category->slug }}">
-                        {{ $post->category->name }}
+                <li style="font-weight: bold; color: #007bff;">
+                    By <a href=""> Victor Braz </a> in <a href="/categories/{{ $post->category->slug }}">
+                       {{ $post->category->name }}
                     </a>
                 </li>
             </ul>

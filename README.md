@@ -216,3 +216,9 @@ Psy Shell v0.11.22 (PHP 8.2.10 — cli) by Justin Hileman
 # composer clockwork
 
 $ composer require itsgoingd/clockwork
+
+# command database
+
+php artisan migrate:refresh
+php artisan db:seed
+php artisan migrate:fresh --seed
