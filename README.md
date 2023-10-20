@@ -212,3 +212,7 @@ Psy Shell v0.11.22 (PHP 8.2.10 — cli) by Justin Hileman
     ],
 
 }
+
+# composer clockwork
+
+$ composer require itsgoingd/clockwork
