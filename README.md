@@ -184,3 +184,31 @@ Here's a refactored HTML structure with inline styles:
     >
 </div>
 ```
+
+# first post - category
+
+npm run tinker
+
+> tinker
+> php artisan tinker
+
+Psy Shell v0.11.22 (PHP 8.2.10 — cli) by Justin Hileman
+
+> $post = App\Models\Category::first()->posts;
+> = Illuminate\Database\Eloquent\Collection {#7224
+
+    all: [
+      App\Models\Post {#7223
+        id: 1,
+        category_id: 1,
+        slug: "my-family-post",
+        title: "My family Post",
+        excerpt: "Excerpt for my post",
+        body: "Loren ipsum dolar sit amet",
+        created_at: "2023-10-20 09:46:23",
+        updated_at: "2023-10-20 09:46:23",
+        published_at: null,
+      },
+    ],
+
+}

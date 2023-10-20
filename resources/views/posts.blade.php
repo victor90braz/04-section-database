@@ -4,8 +4,10 @@
             <div class="grid-item" style="border: 1px solid #ccc; padding: 10px;">
                 <nav>
                     <ul style="list-style: none;">
-                        <li style="font-weight: bold; color: #ff3700;">
-                            {{ $post->category->name }}
+                        <li style="font-weight: bold; color: #ff3700; text-decoration: underline;">
+                            <a href="/categories/{{ $post->category->id }}">
+                                {{ $post->category->name }}
+                            </a>
                         </li>
                     </ul>
                 </nav>

@@ -3,7 +3,9 @@
         <nav>
             <ul style="list-style: none;">
                 <li style="font-weight: bold; color: #007bff; text-decoration: underline;">
-                    {{ $post->category->name }}
+                    <a href="/categories/{{ $post->category->id }}">
+                        {{ $post->category->name }}
+                    </a>
                 </li>
             </ul>
         </nav>
