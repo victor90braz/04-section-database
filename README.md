@@ -137,3 +137,8 @@ $post->body = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec 
 ```php
 $post->save();
 ```
+
+# Categories
+
+php artisan create:model
+php artisan make:model Category -m
