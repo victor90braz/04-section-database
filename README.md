@@ -141,5 +141,23 @@ $post->save();
 # Categories
 
 php artisan make:model Category -m
+
+# schema
+
+public function up()
+{
+Schema::create('categories', function (Blueprint $table) {
+$table->id();
+$table->string('name');
+$table->string('slug');
+$table->timestamps();
+});
+}
+
+# create a database categories
+
 php artisan tinker
 $category = new \App\Models\Category
+$category->name = 'Personal';
+$category->slug = 'personal';
+$category->save();
