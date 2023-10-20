@@ -36,8 +36,8 @@ class DatabaseSeeder extends Seeder
             'category_id' => $personal->id,
             'title' => 'My Personal Post',
             'slug' => 'my-personal-post',
-            'excerpt' => 'Loren ipsum dolar sit amet',
-            'body' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+            'excerpt' => '<p>Loren ipsum dolar sit amet</p>',
+            'body' => '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>'
         ]);
 
         Post::create([
@@ -45,8 +45,8 @@ class DatabaseSeeder extends Seeder
             'category_id' => $family->id,
             'title' => 'My Family Post',
             'slug' => 'my-family-post',
-            'excerpt' => 'Loren ipsum dolar sit amet',
-            'body' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+            'excerpt' => '<p>Loren ipsum dolar sit amet</p>',
+            'body' => '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>'
         ]);
 
         Post::create([
@@ -54,8 +54,8 @@ class DatabaseSeeder extends Seeder
             'category_id' => $work->id,
             'title' => 'Work Post',
             'slug' => 'my-work-post',
-            'excerpt' => 'Loren ipsum dolar sit amet',
-            'body' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+            'excerpt' => '<p>Loren ipsum dolar sit amet</p>',
+            'body' => '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>'
         ]);
     }
 }
