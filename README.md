@@ -140,5 +140,6 @@ $post->save();
 
 # Categories
 
-php artisan create:model
 php artisan make:model Category -m
+php artisan tinker
+$category = new \App\Models\Category
