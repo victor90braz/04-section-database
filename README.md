@@ -3,17 +3,13 @@
 
 ## GitHub Repository
 
-Find the code and more on GitHub: [04-section-database Repository](https://github.com/victor90braz/04-section-database.git)
+-   Find the code and more on GitHub: [04-section-database Repository](https://github.com/victor90braz/04-section-database.git)
 
-## Repository Link
-
-[Repository Link](https://github.com/victor90braz/04-section-database.git)
-
-# Introduction
+## Introduction
 
 Welcome to the Laravel Database Interaction README! This guide provides comprehensive instructions for setting up your Laravel project, connecting to a MySQL database, and creating and interacting with users, posts, and categories using the Tinker tool.
 
-# Installation
+## Installation
 
 To create a new Laravel project named "app-example," run the following command:
 
@@ -22,7 +18,7 @@ composer create-project laravel/laravel app-example
 ```
 ````
 
-# Running the Application
+## Running the Application
 
 To start the development server, use the following command:
 
@@ -30,7 +26,7 @@ To start the development server, use the following command:
 php artisan serve
 ```
 
-# Connect to the Database
+## Connect to the Database
 
 You can connect to your MySQL database using the following command:
 
@@ -38,7 +34,7 @@ You can connect to your MySQL database using the following command:
 mysql -u root -p
 ```
 
-# Migrate the Database
+## Migrate the Database
 
 To create the necessary database tables, run the migration with:
 
@@ -46,7 +42,7 @@ To create the necessary database tables, run the migration with:
 php artisan migrate
 ```
 
-# Creating a New User and Adding It to the Database Using Tinker
+## Creating a New User and Adding It to the Database Using Tinker
 
 To create a new user and add it to the database, you can use Laravel's Tinker. First, run Tinker with the following command:
 
@@ -82,11 +78,11 @@ $user->save();
 $user->find(1);
 ```
 
-# Posts
+## Posts
 
 This sequence of commands creates a new user with the provided information and stores it in your database.
 
-# Creating a New Category and Adding It to the Database Using Tinker
+## Creating a New Category and Adding It to the Database Using Tinker
 
 To create a new category and add it to the database, use the following commands:
 
@@ -135,7 +131,7 @@ $category->slug = 'personal';
 $category->save();
 ```
 
-# Retrieving Data with Eloquent
+## Retrieving Data with Eloquent
 
 To retrieve data with Eloquent and access relationships, you can use the following commands in Tinker:
 
@@ -151,7 +147,7 @@ $post = \App\Models\Post::with('category')->first();
 $post->category->name;
 ```
 
-# HTML Structure with Inline Styles
+## HTML Structure with Inline Styles
 
 Here's a refactored HTML structure with inline styles:
 
@@ -185,49 +181,27 @@ Here's a refactored HTML structure with inline styles:
 </div>
 ```
 
-# first post - category
+## Working with the Database
 
-npm run tinker
+Here are some useful commands for working with the database:
 
-> tinker
-> php artisan tinker
+-   Refresh and seed the database:
 
-Psy Shell v0.11.22 (PHP 8.2.10 — cli) by Justin Hileman
-
-> $post = App\Models\Category::first()->posts;
-> = Illuminate\Database\Eloquent\Collection {#7224
-
-    all: [
-      App\Models\Post {#7223
-        id: 1,
-        category_id: 1,
-        slug: "my-family-post",
-        title: "My family Post",
-        excerpt: "Excerpt for my post",
-        body: "Loren ipsum dolar sit amet",
-        created_at: "2023-10-20 09:46:23",
-        updated_at: "2023-10-20 09:46:23",
-        published_at: null,
-      },
-    ],
-
-}
-
-# composer clockwork
-
-$ composer require itsgoingd/clockwork
-
-# command database
-
+```bash
 php artisan migrate:refresh
 php artisan db:seed
-php artisan migrate:fresh --seed
+```
 
-# add fake data
+-   Add fake data to the database:
 
-$ npm run tinker
+```bash
+php artisan tinker
+$cat = \App\Models\Category::factory(30)->create();
+```
 
-> tinker
-> php artisan tinker
+-   Retrieve data with relationships:
 
-> $cat = \App\Models\Category::factory(30)->create();
+```bash
+php artisan tinker
+\App\Models\Post::with('user', 'category')->first()
+```
