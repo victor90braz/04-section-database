@@ -222,3 +222,12 @@ $ composer require itsgoingd/clockwork
 php artisan migrate:refresh
 php artisan db:seed
 php artisan migrate:fresh --seed
+
+# add fake data
+
+$ npm run tinker
+
+> tinker
+> php artisan tinker
+
+> $cat = \App\Models\Category::factory(30)->create();
