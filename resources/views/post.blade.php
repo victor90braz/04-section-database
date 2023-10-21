@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="container" style="max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f5f5f5;">
+    <div class="container" style="max-width: 800px; margin: 10px auto; padding: 20px; background-color: #f5f5f5;">
         <nav>
             <ul style="list-style: none;">
                 <li style="font-weight: bold; color: #007bff;">
