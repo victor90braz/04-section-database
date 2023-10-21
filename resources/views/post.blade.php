@@ -3,7 +3,7 @@
         <nav>
             <ul style="list-style: none;">
                 <li style="font-weight: bold; color: #007bff;">
-                    By <a href=""> {{$post->user->name}} </a> in <a href="/categories/{{ $post->category->slug }}">
+                    By <a href=""> {{$post->author->name}} </a> in <a href="/categories/{{ $post->category->slug }}">
                        {{ $post->category->name }}
                     </a>
                 </li>
